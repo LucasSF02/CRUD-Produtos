@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Produtos / Login</title>
+    <link rel="stylesheet" href="../login.css/tela login.css">
+</head>
+<body>
+    <section>
+    <form>
+        
+            <h1>Login</h1>
+        
+        <div class="grupo">
+            <input id="Email" type="email" required>
+            <label for="Email">E-mail:</label> <br>
+        </div>
+
+        <div class="grupo">
+            <input id="senha" type="password" required>
+            <label for="senha"> Senha:</label> <br>
+        </div>
+
+        <div class="esqueci-minha-senha">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button id="btn-login" type="submit" onclick="logar()">Sign in</button>
+
+    </form>
+    </section>
+    
+    <script src="../js/base-crud.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
