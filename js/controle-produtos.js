@@ -135,7 +135,14 @@ function adicionarProdutoNoBackend(produto) {
             modalProduto.hide();
 
             
-            alert(`Produto ${produto.nome}, foi cadastrado com sucesso!`)
+           Swal.fire({
+                icon: "success",
+                background: 'rgb(33 37 41)',
+                color:  '#fff',
+                title: `Produto ${produto.nome}, foi cadastrado com sucesso!`,
+                showConfirmButton: false,
+                timer: 4000
+            });
         })
 }
 
