@@ -93,7 +93,13 @@ formModal.btnSalvar.addEventListener('click', () => {
     let produto = obterProdutoDoModal();
 
     if (!produto.validar()) {
-        alert("Nome e Valor são obrigatórios.");
+        Swal.fire({
+            icon: "error",
+            background: 'rgb(33 37 41)',
+            color:  '#fff',            
+            title: "Oops...",
+            text: "Nome e Valor são obrigatorios!",
+        });
         return;
     }
 
